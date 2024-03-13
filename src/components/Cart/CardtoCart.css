@@ -1,0 +1,89 @@
+.products__card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.products__card-img {
+    width: 100px;
+    height: 100px;
+}
+
+.products__card-size {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+
+}
+
+.products__card-title {
+    font-size: 16px;
+    text-align: start;
+    color: white;
+}
+
+.products__card-description {
+    word-break: break-all;
+    width: 200px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    left: 630px;
+}
+
+.product__counter {
+    display: flex;
+    z-index: 1;
+    padding: 0 11px 0 11px;
+    color: #000;
+
+}
+
+.product__count-minus {
+    padding: 8px 16px;
+    background-color: #ffd900;
+    border-radius: 23px 0 0 23px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.product__count-minus:hover {
+    background-color: #ffd900;
+}
+
+.product__count-plus {
+    padding: 8px 14px;
+    border-radius: 0 23px 23px 0;
+    background-color: #ffd900;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.product__count-plus:hover {
+    background-color: #ffd900
+}
+
+.product__counter-number {
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #ffd900;
+}
+
+
+
+.product__add-tocart:hover {
+    background-color: rgb(253, 172, 9);
+}

@@ -1,0 +1,260 @@
+.cart-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: #1c1a1ac4;
+    ;
+    z-index: 200;
+    animation-duration: 1s;
+    animation-name: slidein;
+
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 120%;
+    }
+}
+
+.cart-wrapper {
+    width: 50%;
+
+    background: rgb(18 16 16);
+    position: fixed;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    display: block;
+
+}
+
+.cart-empty {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px;
+    color: #efefef;
+}
+
+.cart-wrapper__cards::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #ebe708fa;
+    height: 30px;
+
+}
+
+.cart-wrapper__cards::-webkit-scrollbar-track {
+    margin: 12px 0;
+    background: rgb(18 16 16);
+    border-radius: 100px;
+}
+
+.cart-wrapper__cards {
+    display: block;
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.cart-wrapper__cards::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(18 16 16);
+}
+
+.cart-wrapper-h4 {
+    color: #efefef;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0 0 10px;
+    text-align: center;
+}
+
+.cart-wrapper-item {
+    display: block;
+    width: 95%;
+    height: 29%;
+    margin: 15px 20px 0 20px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.cart-wrapper-content {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px 6px 20px;
+    border-bottom: 1px dotted #f8f7f2;
+}
+
+.product-name {
+    margin-left: 11px;
+    margin-bottom: 5px;
+}
+
+.img-product-cart {
+    width: 130px;
+    height: 130px;
+}
+
+.cart-product-name {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #efefef;
+
+}
+
+.total-price {
+    color: #efefef;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: sans-serif;
+    width: 110px;
+}
+
+.cart-input {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ffd900;
+    border-radius: 7px 7px 7px 7px;
+    display: block;
+    background: none;
+    margin: 20px 20px 0px 20px;
+    color: #efefef;
+}
+
+::-webkit-input-placeholder {
+    color: #efefef;
+}
+
+::-moz-placeholder {
+    color: #efefef;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #efefef;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #efefef;
+}
+
+textarea {
+    display: block;
+    width: 95%;
+    padding: 8px 16px;
+    border: 1px solid #ffd900;
+    border-radius: 7px 7px 7px 7px;
+    margin: 20px 20px 0px 20px;
+    background: none;
+    resize: none;
+    height: 60px;
+    color: #efefef;
+}
+
+.card-adress {
+    display: flex;
+    justify-content: center;
+}
+
+.card-adress input {
+    width: 25%;
+}
+
+.payment-wrap {
+    border: 1px solid #ffd900;
+    border-radius: 7px 7px 7px 7px;
+    margin: 20px 15px 15px 20px;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    ;
+}
+
+.payment-product-add-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 45px;
+}
+
+.payment-check-style {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffd900;
+    border-radius: 50%;
+    margin-left: -26px;
+    cursor: pointer;
+}
+
+.payment-product-add-checkbox:checked+.payment-check-style::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffd900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.payment-input-lable {
+    padding-left: 50px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #efefef;
+    cursor: pointer;
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+
+}
+
+.payment-method {
+    margin-top: 15px;
+}
+
+.total-price-h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #efefef;
+}
+
+.min-cost-order {
+    color: #efefef;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price-sale {
+    color: #efefef;
+    text-align: center;
+    margin-bottom: 10px;
+}

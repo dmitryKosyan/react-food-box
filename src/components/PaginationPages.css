@@ -1,0 +1,32 @@
+.page-wrap {
+    position: relative;
+}
+
+.pages {
+    color: rgb(248, 241, 241);
+    cursor: pointer;
+    list-style: none;
+    font-size: 14px;
+}
+
+.page-List {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.active-page {
+    background-color: #ffee00;
+    padding: 3px;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+
+}
